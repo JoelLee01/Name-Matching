@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -31,10 +31,20 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
+.env
+.env.local
+.env.*.local
 .env*
 
 # vercel
-.vercel
+/.vercel/
+
+# private workbook exports and local data
+*.xlsx
+*.xls
+*.csv
+/tmp/
+/tmp-inspect.js
 
 # typescript
 *.tsbuildinfo
